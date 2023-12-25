@@ -39,6 +39,13 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 npm i
 ```
+
+## Important
+Run below command every time to update ./prisma/schema.prisma file
+```sh
+npx prisma generate
+```
+
 ## Run in development mode
 ```sh
 npm run start:dev
@@ -46,7 +53,7 @@ npm run start:dev
 
 ## Run with Docker
 ```sh
-docker-compose up -d
+docker-compose up -d --build
 ```
 
 ## Directly run in typescript language (This will not emit your app to javascript in dist folder)
